@@ -60,8 +60,8 @@ namespace BoholBusTicketingApp
             this.ResumeLayout(false);
         }
 
-        private System.Windows.Forms.DateTimePicker datePicker;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button viewReportButton;
+        private System.Windows.Forms.DateTimePicker datePicker = null!;
+        private System.Windows.Forms.DataGridView dataGridView1 = null!;
+        private System.Windows.Forms.Button viewReportButton = null!;
     }
 }
