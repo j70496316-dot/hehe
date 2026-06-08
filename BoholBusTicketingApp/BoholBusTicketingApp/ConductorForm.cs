@@ -8,22 +8,28 @@ namespace BoholBusTicketingApp
 {
     public partial class ConductorForm : Form
     {
-        private ITicketingService _service;
-        private string _conductorId;
-        private Conductor _conductor;
+        private readonly ITicketingService _service;
+        private readonly string _conductorId;
+        private readonly Conductor _conductor;
 
         public ConductorForm(ITicketingService service, string conductorId)
         {
-            _service = service;
-            _conductorId = conductorId;
-            _conductor = _service.GetConductor(conductorId);
+            _service = service ?? throw new ArgumentNullException(nameof(service));
+            _conductorId = conductorId ?? throw new ArgumentNullException(nameof(conductorId));
+            _conductor = _service.GetConductor(conductorId) ?? throw new InvalidOperationException("Conductor not found");
             InitializeComponent();
         }
 
         private void CalculateFareButton_Click(object sender, EventArgs e)
         {
-            string fromLocation = fromComboBox.SelectedItem.ToString();
-            string toLocation = toComboBox.SelectedItem.ToString();
+            if (fromComboBox.SelectedItem == null || toComboBox.SelectedItem == null)
+            {
+                MessageBox.Show("Please select both from and to locations");
+                return;
+            }
+
+            string fromLocation = fromComboBox.SelectedItem.ToString() ?? "";
+            string toLocation = toComboBox.SelectedItem.ToString() ?? "";
 
             double distance = _service.GetDistance(_conductor.Route, fromLocation, toLocation);
             double fare = _service.CalculateFare(_conductor.Route, fromLocation, toLocation);
@@ -34,11 +40,23 @@ namespace BoholBusTicketingApp
 
         private void PrintTicketButton_Click(object sender, EventArgs e)
         {
-            string passengerName = passengerTextBox.Text.Trim();
-            string fromLocation = fromComboBox.SelectedItem.ToString();
-            string toLocation = toComboBox.SelectedItem.ToString();
+            if (fromComboBox.SelectedItem == null || toComboBox.SelectedItem == null)
+            {
+                MessageBox.Show("Please select both from and to locations");
+                return;
+            }
 
-            Ticket ticket = _service.CreateAndPrintTicket(
+            string passengerName = passengerTextBox.Text.Trim();
+            if (string.IsNullOrWhiteSpace(passengerName))
+            {
+                MessageBox.Show("Please enter passenger name");
+                return;
+            }
+
+            string fromLocation = fromComboBox.SelectedItem.ToString() ?? "";
+            string toLocation = toComboBox.SelectedItem.ToString() ?? "";
+
+            Ticket? ticket = _service.CreateAndPrintTicket(
                 _conductorId,
                 _conductor.Route,
                 fromLocation,
