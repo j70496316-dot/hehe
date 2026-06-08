@@ -8,11 +8,11 @@ namespace BoholBusTicketingApp
 {
     public partial class AdminForm : Form
     {
-        private ITicketingService _service;
+        private readonly ITicketingService _service;
 
         public AdminForm(ITicketingService service)
         {
-            _service = service;
+            _service = service ?? throw new ArgumentNullException(nameof(service));
             InitializeComponent();
         }
 
