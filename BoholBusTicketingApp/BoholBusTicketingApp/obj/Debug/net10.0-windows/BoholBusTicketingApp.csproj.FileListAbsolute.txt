@@ -1,0 +1,7 @@
+C:\Users\Gabriel Justol\source\repos\BoholBusTicketingApp\BoholBusTicketingApp\obj\Debug\net10.0-windows\BoholBusTicketingApp.csproj.AssemblyReference.cache
+C:\Users\Gabriel Justol\source\repos\BoholBusTicketingApp\BoholBusTicketingApp\obj\Debug\net10.0-windows\BoholBusTicketingApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel Justol\source\repos\BoholBusTicketingApp\BoholBusTicketingApp\obj\Debug\net10.0-windows\BoholBusTicketingApp.AssemblyInfoInputs.cache
+C:\Users\Gabriel Justol\source\repos\BoholBusTicketingApp\BoholBusTicketingApp\obj\Debug\net10.0-windows\BoholBusTicketingApp.AssemblyInfo.cs
+C:\Users\Gabriel Justol\source\repos\BoholBusTicketingApp\BoholBusTicketingApp\obj\Debug\net10.0-windows\BoholBusTicketingApp.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Justol\source\repos\BoholBusTicketingApp\BoholBusTicketingApp\obj\Debug\net10.0-windows\BoholBusTicketingApp.LoginForm.resources
+C:\Users\Gabriel Justol\source\repos\BoholBusTicketingApp\BoholBusTicketingApp\obj\Debug\net10.0-windows\BoholBusTicketingApp.csproj.GenerateResource.cache

@@ -1,0 +1,6 @@
+C:\Users\Gabriel Justol\source\repos\BusTicketingSystem\BusTicketingSystem\obj\Debug\BusTicketingSystem.csproj.AssemblyReference.cache
+C:\Users\Gabriel Justol\source\repos\BusTicketingSystem\BusTicketingSystem\obj\Debug\BusTicketingSystem.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Justol\source\repos\BusTicketingSystem\BusTicketingSystem\bin\Debug\BusTicketingSystem.dll
+C:\Users\Gabriel Justol\source\repos\BusTicketingSystem\BusTicketingSystem\bin\Debug\BusTicketingSystem.pdb
+C:\Users\Gabriel Justol\source\repos\BusTicketingSystem\BusTicketingSystem\obj\Debug\BusTicketingSystem.dll
+C:\Users\Gabriel Justol\source\repos\BusTicketingSystem\BusTicketingSystem\obj\Debug\BusTicketingSystem.pdb
