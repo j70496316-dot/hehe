@@ -110,13 +110,13 @@ namespace BoholBusTicketingApp
             this.PerformLayout();
         }
 
-        private System.Windows.Forms.ComboBox fromComboBox;
-        private System.Windows.Forms.ComboBox toComboBox;
-        private System.Windows.Forms.TextBox passengerTextBox;
-        private System.Windows.Forms.Label distanceLabel;
-        private System.Windows.Forms.Label fareLabel;
-        private System.Windows.Forms.Button calculateFareButton;
-        private System.Windows.Forms.Button printTicketButton;
-        private System.Windows.Forms.Button inventoryButton;
+        private System.Windows.Forms.ComboBox fromComboBox = null!;
+        private System.Windows.Forms.ComboBox toComboBox = null!;
+        private System.Windows.Forms.TextBox passengerTextBox = null!;
+        private System.Windows.Forms.Label distanceLabel = null!;
+        private System.Windows.Forms.Label fareLabel = null!;
+        private System.Windows.Forms.Button calculateFareButton = null!;
+        private System.Windows.Forms.Button printTicketButton = null!;
+        private System.Windows.Forms.Button inventoryButton = null!;
     }
 }
