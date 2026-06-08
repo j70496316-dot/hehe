@@ -1,4 +1,6 @@
-﻿namespace BoholBusTicketingApp
+using System.Windows.Forms;
+
+namespace BoholBusTicketingApp
 {
     public partial class LoginForm : Form
     {
