@@ -48,7 +48,7 @@ namespace BoholBusTicketingApp
             this.PerformLayout();
         }
 
-        private System.Windows.Forms.TextBox idTextBox;
-        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.TextBox idTextBox = null!;
+        private System.Windows.Forms.TextBox passwordTextBox = null!;
     }
 }
